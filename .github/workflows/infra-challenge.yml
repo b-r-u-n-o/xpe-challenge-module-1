@@ -38,5 +38,5 @@ jobs:
         COMMAND_IAC: terraform
 
     - run: |
-      cd infra
-      $COMMAND_IAC apply -auto--aprove
+        cd infra
+        $COMMAND_IAC apply -auto--aprove

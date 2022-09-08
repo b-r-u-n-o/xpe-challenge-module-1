@@ -38,8 +38,8 @@ jobs:
         COMMAND_IAC: terraform
 
     - run: |
-      cd infra
-      $COMMAND_IAC init
-      $COMMAND_IAC fmt
-      $COMMAND_IAC validate
-      $COMMAND_IAC plan
+        cd infra
+        $COMMAND_IAC init
+        $COMMAND_IAC fmt
+        $COMMAND_IAC validate
+        $COMMAND_IAC plan
