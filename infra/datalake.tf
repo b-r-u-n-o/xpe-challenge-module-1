@@ -1,7 +1,7 @@
 # Iniciar o desenvolvimento de novos recursos na AWS com IaC 
 
 # Cria bucket para o nosso datalake
-resource "aws_s3_bucket" "teste-datalake" {
+resource "aws_s3_bucket" "datalake" {
     bucket = "${var.bucket_name}-${var.enviroment}"
     acl = "private"
 

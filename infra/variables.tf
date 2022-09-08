@@ -1,5 +1,5 @@
 variable "bucket_name" {
-  default = "datalake-bruno-???"
+  default = "datalake-bruno-xpe-2022"
 }
 
 variable "enviroment" {

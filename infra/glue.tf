@@ -13,7 +13,7 @@ resource "aws_glue_catalog_database" "rais_db" {
 
 # cria crawler para a tabela rais
 resource "aws_glue_crawler" "rais_crawler" {
-  database_name = aws_glue_catalog_database.rais_crawler.name
+  database_name = aws_glue_catalog_database.rais.name
   name          = "rais_crawler"
   role          = aws_iam_role.rais_crawler.arn
 
