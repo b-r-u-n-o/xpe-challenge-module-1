@@ -2,20 +2,16 @@
 name: Test build Infrastructure on the AWS
 
 on:
-  pull_request:
-    branches: [master]
-
-permissions:
-  contents: read
+  push:
+    branches: [developement]
 
 jobs:
   deploy:
-    name: Deploy infra
+    name: Test infra
     runs-on: ubuntu-latest
     enviroment: prod-test
 
     steps:
-
     - uses: actions/checkout@v3
 
     - name: Setup python 3.10
