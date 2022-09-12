@@ -1,4 +1,4 @@
-# Challenge IGTI
+# Módulo 1: Desafio
 
 ##
 
