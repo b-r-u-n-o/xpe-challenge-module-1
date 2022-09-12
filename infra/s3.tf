@@ -19,3 +19,9 @@ resource "aws_s3_bucket" "datalake" {
     }
 }
 
+resource "aws_s3_bucket_object" "upload-python-file" {
+  bucket = aws_s3_bucket.datalake.id
+  key = "scripts/python/process.py"
+  source = "../scripts/"
+}
+

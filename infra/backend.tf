@@ -1,9 +1,3 @@
-# Configurações
-# Define o provedor cloud e ajusta a região
-provider "aws" {
-  region = "${var.region_default}"
-}
-
 # Configura o backend para o S3
 terraform {
   backend "s3" {
