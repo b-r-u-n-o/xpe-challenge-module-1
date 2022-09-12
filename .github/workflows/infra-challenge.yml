@@ -2,7 +2,7 @@
 name: Build Infrastructure on the AWS
 
 on:
-  pull-request:
+  push:
     branches: [master]
 
 jobs:
